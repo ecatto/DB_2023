@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="styles/style.css">
+
+<title>Ellies Search page</title>
+<body> 
+<%- include('common/header'); -%>
+
+<p>Search record page</p>
+
+<div class="container">
+    <div class="row col-md-11 col-md-offset-0 custyle mx-auto">
+      
+    
+    
+    <h1 class="mx-auto"> Racehorses  </h1>
+
+<table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Year of birth</th>
+            <th>Colour</th>
+            <th>Owner</th>
+            <th>Races Run</th>
+            <th>Races Won</th>
+        </tr>
+
+        <%          
+          horses.forEach(horse => {            
+        %>
+            <tr>
+                <td><%=  horse.name  %></td>
+                <td><%=  horse.yob %></td>
+                <td><%=  horse.colour  %></td>
+                <td><%=  horse.owner  %></td>
+                <td><%=  horse.racesRun  %></td>
+                <td><%=  horse.racesWon  %></td>
+
+                <td class="text-center"><a class='btn btn-info btn-xs'><span class="glyphicon glyphicon-edit"></span> Edit</a>  
+                <a  href="/search/delete/<%= horse.id %>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+               
+                 
+            </tr>
+            
+         <%  
+          });
+         %>
+       
+    </thead>
+          
+</table>
+
+</div>
+<%- include('common/footer'); -%>
+
+</body>

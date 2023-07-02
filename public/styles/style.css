@@ -1,0 +1,123 @@
+
+
+
+.content{
+    padding:10px;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 3vh;
+    text-align: left;
+
+  }
+
+  .footer {
+    position:absolute;
+    left:0px;
+    bottom:10px;
+    height:30px;
+    width:100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+
+
+/*
+body{
+    background: rgb(2, 2, 44);
+    color: whitesmoke;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#header{
+    height:30vh;
+    width:100%;
+
+    color: white;
+    font-size: 10vh;
+    background: url("../images/Moons/full-moon-night-landscape-banner.jpg ");
+    background-size:100%;
+    background-position: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #content{
+    padding:5px;
+    padding-top: 10px;
+    width: 100%;
+    height:5vh;
+    font-size: 4vh;
+    text-align: center;
+
+  }
+
+
+nav ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;;
+}
+
+nav ul li{
+    display: inline-block;
+    width:16%;
+    text-align: center;
+}
+
+nav ul li a:link{
+    color: whitesmoke;
+}
+
+nav ul li a:visited{
+    color: whitesmoke;
+}
+
+nav ul li a:hover{
+    color: turquoise;
+}
+
+#datePopup{
+    height: 30vh;
+    width:100%;
+    background-color: teal;
+    font-size: 40pt;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    left:0;
+    top:30%;
+}
+
+#btnCloseBanner{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+#wibble{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 0px){
+    .header{
+        height: 40vh;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .header{
+        height: 90vh;
+    }
+}*/
