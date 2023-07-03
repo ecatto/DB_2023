@@ -1,7 +1,13 @@
-
+body{
+    background: rgb(2, 2, 44);
+    color: whitesmoke;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
 
 .content{
+    background: rgb(2, 2, 44);
     padding:10px;
     padding-top: 10px;
     width: 100%;
@@ -10,16 +16,52 @@
 
   }
 
+  .photo-outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .photo-inner-container{
+    height: 500px;
+    width: 100%;
+    background-color: #188C9C;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding:0;
+    margin:0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  
+  .img-container{
+    background: rgb(2, 2, 44);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+ /* 
   .footer {
     position:absolute;
-    left:0px;
+  left:0px;
+
     bottom:10px;
     height:30px;
     width:100%;
     padding-top: 20px;
     padding-bottom: 20px;
  }
-
+ */
 
 
 /*

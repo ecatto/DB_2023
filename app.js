@@ -5,6 +5,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const path = require("path");
 const app = express();
+const bodyParser = require("body-parser");
 app.set("view engine", "ejs");
 
 //controllers
@@ -23,6 +24,9 @@ mongoose.connection.on("error", (err) => {
   process.exit();
 });
 
+app.use(express.static(path.join(__dirname, "public")));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -48,6 +52,11 @@ app.get("/search/delete/:id", raceHorseController.delete);
 
 app.get("/horses");
 
+app.get("/create-horse", (req, res) => {
+  res.render("create-horse", { errors: {} });
+});
+
+app.post("/create-horse", raceHorseController.create);
 
 //, (req, res) => {
 //  res.render("search");

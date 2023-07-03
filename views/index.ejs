@@ -1,23 +1,28 @@
 
-<link rel="stylesheet" href="styles/style.css">
-
-<%- include('common/header'); -%>
 
 
+<%- include('common/head') %>
+<%- include('common/header3'); -%>
+
+
+<body> 
 
 <div class ="content">
 
-    <p>Home page</p>
+    <p class="text-center">Please use the links above</p>
 
-    <p>Please use the links above</p>
-    
-    Picture not working. Don't know why
-    <img src="mumbles.jpg" class="img-fluid"/>
+    <div class="photo-outer-container">
+        <div class="photo-inner-container">
+          <div class="img-container" style="background: url('/images/racehorses.jpg'); background-size: cover; background-position: center;">
+          </div>
+        </div>
+    </div>        
 
-    <br><br>
 </div>
 
 
 
 
+</body>
 <%- include('common/footer'); -%>
+</html>
