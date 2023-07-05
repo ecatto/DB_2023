@@ -1,20 +1,31 @@
 body{
-    background: rgb(2, 2, 44);
-    color: whitesmoke;
+    background: url('../images/horses2.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
     margin: 0;
+    padding: 0;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 .content{
     background: rgb(2, 2, 44);
-    padding:10px;
+    padding:0;
     padding-top: 10px;
     width: 100%;
     font-size: 3vh;
-    text-align: left;
+    text-align: center;
 
   }
+
+  #indexPage{
+    background: rgb(2, 2, 44);
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 
   .photo-outer-container{
     display: flex;
@@ -49,19 +60,47 @@ body{
     justify-content: center;
   }
 
+  #contactHeader{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
 
- /* 
+  #contactForm{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    #userName, #userEmailAdd, #comments, #btnSubmit5{
+        color: black;
+    }
+  }
+
+
+    .container{
+        background: rgb(2, 2, 44);
+        color: whitesmoke;
+        width: 50%;
+        height:auto;
+        margin: auto;
+        padding-bottom: 50px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-radius: 20px;
+    }
+ 
   .footer {
-    position:absolute;
-  left:0px;
-
-    bottom:10px;
-    height:30px;
+    text-align: center;
+    background: rgb(248,249,250);
+    display: flex;
+    /*
+    left:0px;
     width:100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    bottom:0px;
+    */
+    }
+ 
+    .d-flex{
+        
  }
- */
 
 
 /*

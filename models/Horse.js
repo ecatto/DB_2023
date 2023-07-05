@@ -1,16 +1,15 @@
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
-const raceHorseSchema = new Schema(
+const HorseSchema = new Schema(
   {
     name: String,
     yob: Number,
     colour: String,
     owner: String,
-    racesRun: Number,
-    racesWon: Number,
+    suitability: String,
   },
   { timestamps: true }
 );
 
-module.exports = mongoose.model("RaceHorse", raceHorseSchema);
+module.exports = mongoose.model("Horse", HorseSchema);

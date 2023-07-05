@@ -1,0 +1,51 @@
+<%- include('common/head') %>
+
+<body>
+    <div class="wibble">
+        <%- include('common/header') -%> 
+        <main>
+            <div class="container">
+                <div class="containerHeader">
+                    <h1>Horses</h1>
+                </div>
+
+                <div class ="containerContent">
+                    
+                    <table class="table table-striped custab text-light text-align center">
+                        <thead >
+                            <tr>
+                                <th class="tableHead"> Name</th>
+                                <th class="tableHead"> Year of birth</th>
+                                <th class="tableHead"> Colour</th>
+                            </tr>
+                    
+                            <%          
+                              horses.forEach(horse => {    
+       
+                            %>
+                                <tr>
+                                    <td><%=  horse.name  %></td>
+                                    <td><%=  horse.yob %></td>
+                                    <td><%=  horse.colour  %></td>
+                    
+                                    <td class="text-center"><a class='btn btn-info btn-xs'><span class="glyphicon glyphicon-edit"></span> Edit</a>  
+                                    <a  href="/search/delete/<%= horse.id %>" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Del</a></td>
+                                                                        
+                                </tr>
+                                
+                             <%  
+                              });
+                             %>                           
+                        </thead>                              
+                    </table>
+           </div>
+            </div>
+
+        </main>
+
+        <%- include('common/footer'); -%>
+        </div>
+    </div>
+
+</body>
+</html>

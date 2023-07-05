@@ -1,0 +1,43 @@
+<%- include('common/head') %>
+
+<body>
+    <div class="wibble">
+        <%- include('common/header') -%> 
+        <main>
+            <div class="container">
+                <div class="containerHeader">
+                    <h1>Search for an individual horse</h1>
+                </div>
+
+                <div class ="containerContent">
+
+                    <br>                      
+                     <br>
+                     <form method="POST" action="/searchOne">
+                        <div class="form-group">
+
+                        <label for="name">Horse Name:</label> <br />
+                        <input id="horseName" name = "horsename" type="text" class="form-control" size="40%" required>
+                        <br /><br>
+                        <button id="btnSubmit4">Click here to submit</button>             
+                        <br><br><br>
+                        <br>
+                        </form>
+                     </div>                        
+            </div>
+          
+  
+
+            </form>
+      
+
+
+
+        </main>
+
+        <%- include('common/footer'); -%>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+body{
+    background: url('../images/horses2.png'); 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#indexPage{
+    background: rgb(2, 2, 44);
+    color: whitesmoke;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.wibble {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content{
+
+    padding:0;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 3vh;
+    text-align: center;
+    flex: 1;
+  }
+
+main {
+  flex: 1;
+}
+
+.container{
+    background: rgb(2, 2, 44);
+    color: whitesmoke;
+    width: 55%;
+    height:auto;
+    margin: auto;
+    padding-bottom: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerContent{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.tableHead{
+    text-align: center;
+}
+
+#btnSubmit4, #horseName{
+    color: black;
+}
+
+.btn{
+    margin: 8px;;
+}
+
+
+.photo-outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 10px;
+  }
+  
+  .photo-inner-container{
+    height: 500px;
+    width: 100%;
+    background-color: #188C9C;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding:0;
+    margin:0;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  
+  .img-container{
+    background: rgb(2, 2, 44);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+

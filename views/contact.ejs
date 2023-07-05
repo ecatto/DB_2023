@@ -1,0 +1,48 @@
+
+<%- include('common/head') %>
+ 
+<%- include('common/header') -%> 
+
+<body id="contactPage"> 
+<main> 
+<div class="container"> 
+
+<div id="contactHeader">
+    <h1>Contact Us</h1>
+</div>
+
+
+<div id = "contactForm">
+    <form id="contact">
+        <br><br>
+        <h4 id ="formHeader">Please use the form below to contact us</h4>
+        <label for="name">Name:</label> <br />
+        <input id="userName" name = "name" size="70" required>
+        <br />
+        <br />
+
+        <label for ="emailAdd">Email Address:</label> <br />
+        <input type="email" id ="userEmailAdd" name ="email" size="70" required>
+        <br />
+        <br />
+
+        <label for="userComments">Comments:</label><br />
+        <textarea id="comments" name ="comments" rows="10" cols="75" required></textarea>
+
+        <br />
+        <br />
+        <button id="btnSubmit5">Click here to submit</button>
+
+        <br>
+        <br>
+
+    </form>
+
+    <script src="/scripts/contact.js"></script>
+</div>
+</main>
+
+<footer>
+<%- include('common/footer') %>
+ </footer>
+</body>
