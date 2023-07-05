@@ -62,8 +62,8 @@ app.post("/create-horse", horseController.create);
 
 
 
-app.get("/update", (req, res) => {
-  res.render("update");
+app.get("/updateHorse", (req, res) => {
+  res.render("updateHorse");
 });
 
 app.get("/contact", (req, res) => {

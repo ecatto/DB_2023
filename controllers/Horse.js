@@ -27,10 +27,7 @@ exports.list = async (req, res) => {
   
 
   exports.searchOne = async (req, res) => {
-
-    console.log(req.body);
     const horsename = req.body.horsename;
-    console.log(horsename);
     console.log(req.body.horsename);
     try {
       const message = req.query.message;
@@ -81,24 +78,28 @@ exports.list = async (req, res) => {
 
 exports.edit = async(req,res) =>{
   const id = req.params.id;
+  console.log(id);
   try {
-    const taster = await Taster.findById(id);
-    res.render('update-taster', { taster: taster, id: id });
+    const horse = await Horse.findById(id);
+    res.render('updateHorse', { horse: horse, id: id });
   } catch (e) {
     res.status(404).send({
-      message: `could find taster ${id}.`,
+      message: `could find horse ${id}.`,
     });
   }
 }
 
 exports.update = async (req, res) =>{
   const id = req.params.id;
+  console.log(id);
+  console.log(req.body);
   try {
-    const taster = await Taster.updateOne({ _id: id }, req.body);
-    res.redirect('/tasters/?message=taster has been updated');
+    const horse = await Horse.updateOne({ _id: id }, req.body);
+    res.redirect("/searchAll");
+
   } catch (e) {
     res.status(404).send({
-      message: `could find taster ${id}.`,
+      message: `could find horse ${id}.`,
     });
   }
 }
