@@ -80,9 +80,25 @@ exports.list = async (req, res) => {
   }
 
 exports.edit = async(req,res) =>{
-
+  const id = req.params.id;
+  try {
+    const taster = await Taster.findById(id);
+    res.render('update-taster', { taster: taster, id: id });
+  } catch (e) {
+    res.status(404).send({
+      message: `could find taster ${id}.`,
+    });
+  }
 }
 
 exports.update = async (req, res) =>{
-  
+  const id = req.params.id;
+  try {
+    const taster = await Taster.updateOne({ _id: id }, req.body);
+    res.redirect('/tasters/?message=taster has been updated');
+  } catch (e) {
+    res.status(404).send({
+      message: `could find taster ${id}.`,
+    });
+  }
 }
