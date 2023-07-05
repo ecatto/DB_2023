@@ -79,3 +79,10 @@ exports.list = async (req, res) => {
     }
   }
 
+exports.edit = async(req,res) =>{
+
+}
+
+exports.update = async (req, res) =>{
+  
+}

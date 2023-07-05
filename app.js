@@ -38,20 +38,17 @@ app.get("/", (req, res) => {
 });
 
 
-app.get("/displayOne", horseController.list);
-
-
-
 app.get("/searchAll", horseController.list);
-
 app.get("/searchAll/delete/:id", horseController.delete);
+app.get("/searchAll/update/:id", horseController.edit);
+app.post("/searchAll/update/:id", horseController.update);
 
 
 app.get("/searchOne", (req, res) => {
   res.render("searchOne", { errors: {} });
 });
 app.post("/searchOne/", horseController.searchOne);
-
+app.get("/displayOne", horseController.list);
 
 app.get("/searchCat", (req, res) => {
   res.render("searchCat");
