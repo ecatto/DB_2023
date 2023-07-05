@@ -10,9 +10,9 @@ app.set("view engine", "ejs");
 
 //controllers
 
-const HorseController = require("./controllers/Horse");
+const HorseController = require("./controllers/horse");
 const ownerController = require("./controllers/owner");
-const trainerController = require("./controllers/trainer");
+const trainerController = require("./controllers/user");
 
 
 const { WEB_PORT, MONGODB_URI } = process.env;
@@ -82,14 +82,6 @@ app.get("/template", (req, res) => {
   res.render("template");
 });
 
-//const Horse = mongoose.model('RaceHorse');
-//const kitty = new Horse({ "name" : "Rule the world", "yob" : 2014, "colour" : "bay", racesWon: 12});
-//kitty.save();
-//kitty.save().then(() => console.log('meow'));
-
-//insertOne(
-//  { "name" : "Rule the world", "yob" : 2014, "colour" : "bay"}
-//);
 
 app.listen(WEB_PORT, () => {
   console.log(`Example app listening at http://localhost:${WEB_PORT}`);
