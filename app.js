@@ -10,9 +10,9 @@ app.set("view engine", "ejs");
 
 //controllers
 
-const HorseController = require("./controllers/horse");
+const horseController = require("./controllers/horse");
 const ownerController = require("./controllers/owner");
-const trainerController = require("./controllers/user");
+const userController = require("./controllers/user");
 
 
 const { WEB_PORT, MONGODB_URI } = process.env;
@@ -45,13 +45,13 @@ app.get("/displayOne", HorseController.list);
 
 app.get("/searchAll", HorseController.list);
 
-app.get("/searchAll/delete/:id", HorseController.delete);
+app.get("/searchAll/delete/:id", horseController.delete);
 
 
 app.get("/searchOne", (req, res) => {
   res.render("searchOne", { errors: {} });
 });
-app.post("/searchOne/", HorseController.searchOne);
+app.post("/searchOne/", horseController.searchOne);
 
 
 app.get("/searchCat", (req, res) => {
@@ -62,7 +62,7 @@ app.get("/searchCat", (req, res) => {
 app.get("/create-horse", (req, res) => {
   res.render("newhorse", { errors: {} });
 });
-app.post("/create-horse", HorseController.create);
+app.post("/create-horse", horseController.create);
 
 
 
