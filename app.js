@@ -1,5 +1,4 @@
 //config
-
 require("dotenv").config();
 const mongoose = require("mongoose");
 const express = require("express");
@@ -39,11 +38,11 @@ app.get("/", (req, res) => {
 });
 
 
-app.get("/displayOne", HorseController.list);
+app.get("/displayOne", horseController.list);
 
 
 
-app.get("/searchAll", HorseController.list);
+app.get("/searchAll", horseController.list);
 
 app.get("/searchAll/delete/:id", horseController.delete);
 
