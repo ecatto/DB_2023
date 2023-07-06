@@ -7,3 +7,10 @@ To run this project
 Within the terminal run the commands:
 - npm install
 - npm run dev
+
+
+Within the files searchAll and displayOne, change the address in the href from search, to searchAll
+- searchAll, line 32,
+- displayOne, line 31
+
+The delete function will then work correctly
